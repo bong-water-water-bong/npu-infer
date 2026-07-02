@@ -1,0 +1,64 @@
+warning: Linking two modules of different target triples: '/home/bcloud/torch2aie/toolchain/mlir_aie/aie_runtime_lib/AIE2P/chess_intrinsic_wrapper.ll' is 'pdarch-unknown-unknown-elf' whereas 'llvm-link' is 'aie2p'
+
+warning: overriding the module target triple with pdarch-unknown-unknown-elf [-Woverride-module]
+1 warning generated.
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+Warning in "": (imprecise line-number, the error occurred somewhere in this function): loop with essential overflow in loop count computation (number of iterations exceeds internal maximum) [-Wloop-count-overflow]
+
+
+****** Bootgen v2026.1
+  **** Build date : Mar 16 2026-06:54:08
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+XRT Build Version: 2.21.75 ()
+       Build Date: 
+          Hash ID: 
+Creating a default 'in-memory' xclbin image.
+
+Section: 'MEM_TOPOLOGY'(6) was successfully added.
+Size   : 88 bytes
+Format : JSON
+File   : 'design_bf16_v2.mlir.prj/main_mem_topology.json'
+
+Section: 'AIE_PARTITION'(32) was successfully added.
+Size   : 144440 bytes
+Format : JSON
+File   : 'design_bf16_v2.mlir.prj/main_aie_partition.json'
+Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
+Successfully wrote (150480 bytes) to the output file: design_bf16_v2.xclbin
+Leaving xclbinutil.
+Compilation completed successfully

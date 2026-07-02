@@ -1,0 +1,4 @@
+name: 145f45ab_matmul_i8_i32
+original: matmul_i8_i32
+zero name: zero_i32
+arg_types: ['numpy.ndarray[(4096,), numpy.dtype[numpy.int8]]', 'numpy.ndarray[(4096,), numpy.dtype[numpy.int8]]', 'numpy.ndarray[(4096,), numpy.dtype[numpy.int32]]']

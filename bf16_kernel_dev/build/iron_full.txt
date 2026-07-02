@@ -1,0 +1,6 @@
+INT8 64x64x64 matmul via IRON...
+<stdin>:52: DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments. To learn more, see the migration guide https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword
+Max error: 0.0000
+Sample NPU: [-213  -96 -512  589]
+Sample CPU: [-213  -96 -512  589]
+PASS

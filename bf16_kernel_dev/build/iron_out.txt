@@ -1,0 +1,22 @@
+Running BF16 128x64x128 matmul via IRON...
+DEBUG: saved ELF copy to build/peano_debug.o
+  [0] name_idx=0 name="" type=0
+Traceback (most recent call last):
+  File "<stdin>", line 54, in <module>
+  File "/home/bcloud/mlir-aie/build/python/aie/utils/callabledesign.py", line 343, in __call__
+    kernel = self._compile_and_build_kernel(compilable, cache_key, trace_config)
+  File "/home/bcloud/mlir-aie/build/python/aie/utils/callabledesign.py", line 230, in _compile_and_build_kernel
+    xclbin_path, inst_path = compilable.compile()
+                             ~~~~~~~~~~~~~~~~~~^^
+  File "/home/bcloud/mlir-aie/build/python/aie/utils/compile/jit/compilabledesign.py", line 301, in compile
+    compile_external_kernel(func, kernel_dir, target_arch)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bcloud/mlir-aie/build/python/aie/utils/compile/utils.py", line 479, in compile_external_kernel
+    _rename_symbol_in_object(output_file, original, prefixed)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bcloud/mlir-aie/build/python/aie/utils/compile/utils.py", line 390, in _rename_symbol_in_object
+    _rename_symbol_in_elf32(object_path, old_name, new_name)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bcloud/mlir-aie/build/python/aie/utils/compile/utils.py", line 329, in _rename_symbol_in_elf32
+    raise RuntimeError(f"Cannot find symtab/strtab in AIE ELF: {object_path}")
+RuntimeError: Cannot find symtab/strtab in AIE ELF: /home/bcloud/.npu/cache/dda7e3b1e30f094173f28c48/matmul_bf16_bf16_4641b089.o

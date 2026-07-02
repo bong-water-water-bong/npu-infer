@@ -1,0 +1,80 @@
+_entry_point _main_init
+_symbol core_1_2 _after _main_init
+_symbol _main_init 0
+_reserved DMb 0x00000 0x40000 // Don't put data in code memory
+_stack DM_stack 0x70000 0xB00 // stack for core
+
+// mapping neighbors tile memory
+_reserved DMb 0x40000 0x10000  // No tile with memory exists to the south.
+// west -------------------------------------------------
+_reserved DMb 0x50000 0x10000  // Don't allocate variables in west neighbor
+
+_symbol CL1_0_0_buff_0 0x50B00 16384
+_extern CL1_0_0_buff_0
+_reserved DMb 0x50B00 16384
+
+_symbol BL1_0_0_cons_buff_0 0x54B00 8192
+_extern BL1_0_0_cons_buff_0
+_reserved DMb 0x54B00 8192
+
+_symbol AL1_0_0_cons_buff_0 0x56B00 4096
+_extern AL1_0_0_cons_buff_0
+_reserved DMb 0x56B00 4096
+
+_symbol AL1_0_0_cons_buff_1 0x57B00 4096
+_extern AL1_0_0_cons_buff_1
+_reserved DMb 0x57B00 4096
+
+_symbol _anonymous0 0x58B00 12
+_extern _anonymous0
+_reserved DMb 0x58B00 12
+
+// north -------------------------------------------------
+_reserved DMb 0x60000 0x10000  // Don't allocate variables in north neighbor
+
+_symbol CL1_1_1_buff_0 0x60B00 16384
+_extern CL1_1_1_buff_0
+_reserved DMb 0x60B00 16384
+
+_symbol BL1_1_1_cons_buff_0 0x64B00 8192
+_extern BL1_1_1_cons_buff_0
+_reserved DMb 0x64B00 8192
+
+_symbol AL1_1_1_cons_buff_0 0x66B00 4096
+_extern AL1_1_1_cons_buff_0
+_reserved DMb 0x66B00 4096
+
+_symbol AL1_1_1_cons_buff_1 0x67B00 4096
+_extern AL1_1_1_cons_buff_1
+_reserved DMb 0x67B00 4096
+
+_symbol _anonymous9 0x68B00 12
+_extern _anonymous9
+_reserved DMb 0x68B00 12
+
+// east -------------------------------------------------
+_symbol CL1_1_0_buff_0 0x70B00 16384
+_extern CL1_1_0_buff_0
+_reserved DMb 0x70B00 16384
+
+_symbol BL1_1_0_cons_buff_0 0x74B00 8192
+_extern BL1_1_0_cons_buff_0
+_reserved DMb 0x74B00 8192
+
+_symbol AL1_0_1_cons_buff_0 0x76B00 4096
+_extern AL1_0_1_cons_buff_0
+_reserved DMb 0x76B00 4096
+
+_symbol AL1_0_1_cons_buff_1 0x77B00 4096
+_extern AL1_0_1_cons_buff_1
+_reserved DMb 0x77B00 4096
+
+_symbol _anonymous1 0x78B00 12
+_extern _anonymous1
+_reserved DMb 0x78B00 12
+
+// end mapping neighbors tile memory
+
+_reserved DMb 0x80000 0x80000 // And everything else the core can't see
+_include _file mm_bf16_v2.o
+_resolve _main core_1_2
